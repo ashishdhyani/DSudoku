@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MyActivity" >
+    <item android:id="@+id/new_game"
+        android:title="@string/new_game"
+        android:showAsAction="never" />
+    <item android:id="@+id/rotate_board"
+        android:title="@string/rotate_board"
+        android:showAsAction="never" />
+    <item android:id="@+id/solve_it"
+        android:title="@string/solve_it"
+        android:showAsAction="never" />
+    <item android:id="@+id/action_validate"
+        android:title="@string/validate"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+
+</menu>

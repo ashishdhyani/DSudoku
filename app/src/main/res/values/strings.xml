@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="package_name">com.ammvision.sudoku</string>
+    <string name="app_name">Sudoku Lite</string>
+    <string name="title_section1">Sudoku (Easy)</string>
+    <string name="title_section2">Sudoku (Medium)</string>
+    <string name="title_section3">Sudoku (Hard)</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="new_game">New Game</string>
+    <string name="rotate_board">Rotate Board</string>
+    <string name="solve_it">Solve Sudoku</string>
+    <string name="action_settings">Settings</string>
+    <string name="FromText">FromText</string>
+    <string name="ToText">ToText</string>
+    <string name="ConvertButton">Convert</string>
+    <string name="validate">Validate</string>
+    <string name="sudoku_settings">Settings</string>
+
+    <string-array name="types">
+        <item>Type 1</item>
+        <item>Type 2</item>
+        <item>Type 3</item>
+    </string-array>
+    <string-array name="types_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string name="title_activity_how_to_play">How To Play</string>
+    <string name="title_activity_sudoku_main">Sudoku Lite</string>
+
+</resources>

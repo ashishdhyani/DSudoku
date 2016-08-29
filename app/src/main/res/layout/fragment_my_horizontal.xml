@@ -1,0 +1,978 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
+    android:id="@+id/RelativeLayout1"
+    android:background="@drawable/background5"
+    tools:context=".MyActivity$PlaceholderFragment">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TableRow android:layout_gravity="center">
+
+            <TableLayout android:layout_column="0"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical">
+
+                <TableRow android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:gravity="center_horizontal">
+                    <TextView android:id="@+id/Num1" android:layout_column="0"
+                        android:textSize="@dimen/number_size_y" android:gravity="center"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/button_style"
+                        android:text="1" />
+                </TableRow>
+                <TableRow android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:gravity="center_horizontal">
+                    <TextView android:id="@+id/Num2" android:layout_column="0"
+                        android:textSize="@dimen/number_size_y" android:gravity="center"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/button_style"
+                        android:text="2" />
+
+                </TableRow>
+                <TableRow android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:gravity="center_horizontal">
+                    <TextView android:id="@+id/Num3" android:layout_column="0"
+                        android:textSize="@dimen/number_size_y" android:gravity="center"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/button_style"
+                        android:text="3" />
+                </TableRow>
+                <TableRow android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:gravity="center_horizontal">
+                    <TextView android:id="@+id/Num4" android:layout_column="0"
+                        android:textSize="@dimen/number_size_y" android:gravity="center"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/button_style"
+                        android:text="4" />
+                </TableRow>
+                <TableRow android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:gravity="center_horizontal">
+                    <TextView android:id="@+id/Num5" android:layout_column="0"
+                        android:textSize="@dimen/number_size_y" android:gravity="center"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/button_style"
+                        android:text="5" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout android:layout_column="1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TableRow android:background="@color/black">
+
+                    <TableLayout android:id="@+id/rootCtrl"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <TableRow
+                            android:layout_height="fill_parent"
+                            android:layout_width="fill_parent"
+                            android:gravity="left">
+
+                            <TableLayout android:id="@+id/Sec0" android:layout_margin="1dp"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent">
+
+                                <TableRow android:background="#000000"
+                                    android:layout_height="0dp"
+                                    android:layout_width="0dp"
+                                    android:gravity="left">
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row0Col0"
+                                        android:textSize="7sp" android:gravity="center"
+                                        android:background="#FFFFFF" android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row0Col1"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row0Col2"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                </TableRow>
+
+                                <TableRow android:background="#000000"
+                                    android:layout_height="0dp"
+                                    android:layout_width="0dp"
+                                    android:gravity="left">
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row1Col0"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row1Col1"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row1Col2"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                </TableRow>
+
+                                <TableRow android:id="@+id/Sec0Row2" android:background="#000000"
+                                    android:layout_height="0dp"
+                                    android:layout_width="0dp"
+                                    android:gravity="left">
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row2Col0"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row2Col1"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row2Col2"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                </TableRow>
+
+                            </TableLayout>
+
+                            <TableLayout android:id="@+id/Sec1" android:layout_margin="1dp"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                >
+
+                                <TableRow android:id="@+id/Sec1Row0" android:background="#000000"
+                                    android:layout_height="0dp"
+                                    android:layout_width="0dp"
+                                    android:gravity="left">
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row0Col3"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row0Col4"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row0Col5"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                </TableRow>
+
+                                <TableRow android:id="@+id/Sec1Row1" android:background="#000000"
+                                    android:layout_height="0dp"
+                                    android:layout_width="0dp"
+                                    android:gravity="left">
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row1Col3"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row1Col4"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row1Col5"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                </TableRow>
+
+                                <TableRow android:id="@+id/Sec1Row2" android:background="#000000"
+                                    android:layout_height="0dp"
+                                    android:layout_width="0dp"
+                                    android:gravity="left">
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row2Col3"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row2Col4"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row2Col5"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                </TableRow>
+
+                            </TableLayout>
+
+                            <TableLayout android:id="@+id/Sec2" android:layout_margin="1dp"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                >
+
+                                <TableRow android:id="@+id/Sec2Row0" android:background="#000000"
+                                    android:layout_height="0dp"
+                                    android:layout_width="0dp"
+                                    android:gravity="left">
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row0Col6"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row0Col7"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row0Col8"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                </TableRow>
+
+                                <TableRow android:id="@+id/Sec2Row1" android:background="#000000"
+                                    android:layout_height="0dp"
+                                    android:layout_width="0dp"
+                                    android:gravity="left">
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row1Col6"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row1Col7"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row1Col8"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                </TableRow>
+
+                                <TableRow android:id="@+id/Sec2Row2" android:background="#000000"
+                                    android:layout_height="0dp"
+                                    android:layout_width="0dp"
+                                    android:gravity="left">
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row2Col6"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row2Col7"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row2Col8"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_height="fill_parent"
+                            android:layout_width="fill_parent"
+                            android:gravity="left">
+
+                            <TableLayout android:id="@+id/Sec3" android:layout_margin="1dp"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                >
+
+                                <TableRow android:id="@+id/Sec3Row0" android:background="#000000"
+                                    android:layout_height="0dp"
+                                    android:layout_width="0dp"
+                                    android:gravity="left">
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row3Col0"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row3Col1"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row3Col2"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                </TableRow>
+
+                                <TableRow android:id="@+id/Sec3Row1" android:background="#000000"
+                                    android:layout_height="0dp"
+                                    android:layout_width="0dp"
+                                    android:gravity="left">
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row4Col0"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row4Col1"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row4Col2"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                </TableRow>
+
+                                <TableRow android:id="@+id/Sec3Row2" android:background="#000000"
+                                    android:layout_height="0dp"
+                                    android:layout_width="0dp"
+                                    android:gravity="left">
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row5Col0"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row5Col1"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row5Col2"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                </TableRow>
+
+                            </TableLayout>
+
+                            <TableLayout android:id="@+id/Sec4" android:layout_margin="1dp"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                >
+
+                                <TableRow android:id="@+id/Sec4Row0" android:background="#000000"
+                                    android:layout_height="0dp"
+                                    android:layout_width="0dp"
+                                    android:gravity="left">
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row3Col3"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row3Col4"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row3Col5"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                </TableRow>
+
+                                <TableRow android:id="@+id/Sec4Row1" android:background="#000000"
+                                    android:layout_height="0dp"
+                                    android:layout_width="0dp"
+                                    android:gravity="left">
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row4Col3"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row4Col4"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row4Col5"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                </TableRow>
+
+                                <TableRow android:id="@+id/Sec4Row2" android:background="#000000"
+                                    android:layout_height="0dp"
+                                    android:layout_width="0dp"
+                                    android:gravity="left">
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row5Col3"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row5Col4"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row5Col5"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                </TableRow>
+
+                            </TableLayout>
+
+                            <TableLayout android:id="@+id/Sec5" android:layout_margin="1dp"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                >
+
+                                <TableRow android:id="@+id/Sec5Row0" android:background="#000000"
+                                    android:layout_height="0dp"
+                                    android:layout_width="0dp"
+                                    android:gravity="left">
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row3Col6"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row3Col7"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row3Col8"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                </TableRow>
+
+                                <TableRow android:id="@+id/Sec5Row1" android:background="#000000"
+                                    android:layout_height="0dp"
+                                    android:layout_width="0dp"
+                                    android:gravity="left">
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row4Col6"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row4Col7"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row4Col8"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                </TableRow>
+
+                                <TableRow android:id="@+id/Sec5Row2" android:background="#000000"
+                                    android:layout_height="0dp"
+                                    android:layout_width="0dp"
+                                    android:gravity="left">
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row5Col6"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row5Col7"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row5Col8"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_height="fill_parent"
+                            android:layout_width="fill_parent"
+                            android:gravity="left">
+
+                            <TableLayout android:id="@+id/Sec6" android:layout_margin="1dp"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                >
+
+                                <TableRow android:id="@+id/Sec6Row0" android:background="#000000"
+                                    android:layout_height="0dp"
+                                    android:layout_width="0dp"
+                                    android:gravity="left">
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row6Col0"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row6Col1"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row6Col2"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                </TableRow>
+
+                                <TableRow android:id="@+id/Sec6Row1" android:background="#000000"
+                                    android:layout_height="0dp"
+                                    android:layout_width="0dp"
+                                    android:gravity="left">
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row7Col0"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row7Col1"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row7Col2"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                </TableRow>
+
+                                <TableRow android:id="@+id/Sec6Row2" android:background="#000000"
+                                    android:layout_height="0dp"
+                                    android:layout_width="0dp"
+                                    android:gravity="left">
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row8Col0"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row8Col1"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row8Col2"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                </TableRow>
+
+                            </TableLayout>
+
+                            <TableLayout android:id="@+id/Sec7" android:layout_margin="1dp"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                >
+
+                                <TableRow android:id="@+id/Sec7Row0" android:background="#000000"
+                                    android:layout_height="0dp"
+                                    android:layout_width="0dp"
+                                    android:gravity="left">
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row6Col3"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row6Col4"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row6Col5"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                </TableRow>
+
+                                <TableRow android:id="@+id/Sec7Row1" android:background="#000000"
+                                    android:layout_height="0dp"
+                                    android:layout_width="0dp"
+                                    android:gravity="left">
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row7Col3"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row7Col4"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row7Col5"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                </TableRow>
+
+                                <TableRow android:id="@+id/Sec7Row2" android:background="#000000"
+                                    android:layout_height="0dp"
+                                    android:layout_width="0dp"
+                                    android:gravity="left">
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row8Col3"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row8Col4"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row8Col5"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                </TableRow>
+
+                            </TableLayout>
+
+                            <TableLayout android:id="@+id/Sec8" android:layout_margin="1dp"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                >
+
+                                <TableRow android:id="@+id/Sec8Row0" android:background="#000000"
+                                    android:layout_height="0dp"
+                                    android:layout_width="0dp"
+                                    android:gravity="left">
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row6Col6"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row6Col7"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row6Col8"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                </TableRow>
+
+                                <TableRow android:id="@+id/Sec8Row1" android:background="#000000"
+                                    android:layout_height="0dp"
+                                    android:layout_width="0dp"
+                                    android:gravity="left">
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row7Col6"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row7Col7"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row7Col8"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                </TableRow>
+
+                                <TableRow android:id="@+id/Sec8Row2" android:background="#000000"
+                                    android:layout_height="0dp"
+                                    android:layout_width="0dp"
+                                    android:gravity="left">
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row8Col6"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row8Col7"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                    <com.ammvision.sudoku.CustomTextView
+                                        android:id="@+id/Row8Col8"
+                                        android:textSize="7sp" android:gravity="center" android:background="#FFFFFF"
+                                        android:layout_margin="1dp"
+                                        android:textColor="#000"/>
+
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout android:layout_column="2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical">
+
+                <TableRow android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:gravity="center_horizontal">
+
+                    <TextView android:id="@+id/Num6" android:layout_column="1"
+                        android:textSize="@dimen/number_size_y" android:gravity="center"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/button_style"
+                        android:text="6" />
+                </TableRow>
+                <TableRow android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:gravity="center_horizontal">
+
+                    <TextView android:id="@+id/Num7" android:layout_column="1"
+                        android:textSize="@dimen/number_size_y" android:gravity="center"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/button_style"
+                        android:text="7" />
+                </TableRow>
+                <TableRow android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:gravity="center_horizontal">
+                    <TextView android:id="@+id/Num8" android:layout_column="1"
+                        android:textSize="@dimen/number_size_y" android:gravity="center"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/button_style"
+                        android:text="8" />
+                </TableRow>
+                <TableRow android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:gravity="center_horizontal">
+                    <TextView android:id="@+id/Num9" android:layout_column="1"
+                        android:textSize="@dimen/number_size_y" android:gravity="center"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/button_style"
+                        android:text="9" />
+                </TableRow>
+                <TableRow android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:gravity="center_horizontal">
+                    <ImageButton
+                        android:id="@+id/Erase"
+                        android:layout_column="1"
+                        android:layout_margin="3dp"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/eraser"
+                        android:background="@drawable/button_style" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout android:layout_column="3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:stretchColumns="*">
+
+                <TableRow android:layout_height="fill_parent"
+                    android:layout_width="match_parent">
+                   <TextView android:id="@+id/timeSpent"
+                        android:textSize="20sp" android:gravity="top"
+                        android:text="00:00:00" />
+                    </TableRow>
+                <TableRow android:layout_height="fill_parent"
+                    android:layout_width="match_parent">
+                    <TextView android:id="@+id/validation"
+                        android:textSize="20sp" android:gravity="bottom"
+                        android:text="VALID"
+                        android:textColor="@color/green"/>
+
+                </TableRow>
+                <TableRow>
+                    <ImageButton
+                        android:id="@+id/undo"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:scaleType="centerInside"
+                        android:layout_margin="3dp"
+                        android:padding="2dp"
+                        android:gravity="right"
+                        android:src="@drawable/undo"
+                        android:background="@drawable/button_style" />
+                </TableRow>
+                <TableRow>
+
+                    <ImageButton
+                        android:id="@+id/redo"
+                        android:scaleType="centerInside"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_margin="3dp"
+                        android:padding="2dp"
+                        android:gravity="left"
+                        android:src="@drawable/redo"
+                        android:background="@drawable/button_style" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout android:layout_column="4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TableRow android:layout_height="fill_parent"
+                    android:layout_width="match_parent">
+                    <com.google.android.gms.ads.AdView
+                        android:id="@+id/adView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        ads:adUnitId="ca-app-pub-8372265450710834/9095107508"
+                        ads:adSize="SMART_BANNER"
+                        />
+                </TableRow>
+            </TableLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:title="Preferences">
+
+    <PreferenceCategory
+        android:title="Options">
+
+        <CheckBoxPreference
+            android:key="instant_validation"
+            android:title="Instant Validation"
+            android:summary="Validation on every number entered."
+            android:defaultValue="true"
+            />
+        <CheckBoxPreference
+            android:key="show_timer"
+            android:title="Show Timer"
+            android:summary="Shows the timer while playing."
+            android:defaultValue="true"
+            />
+        <CheckBoxPreference
+            android:key="highlight_cells"
+            android:title="Highlight Cells"
+            android:summary="Highlights all the dependent blocks in the borad."
+            android:defaultValue="true"
+            />
+        <CheckBoxPreference
+            android:key="highlight_numbers"
+            android:title="Highlight Numbers"
+            android:summary="Highlights all the same value blocks (in Red)."
+            android:defaultValue="true"
+            />
+        <ListPreference
+            android:title="Fill Board Preferences"
+            android:key="listPref"
+            android:defaultValue="1"
+            android:entries="@array/listArray"
+            android:entryValues="@array/listValues" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
